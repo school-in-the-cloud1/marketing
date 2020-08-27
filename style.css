@@ -19,19 +19,10 @@ font: inherit;
 vertical-align: baseline;  
 } 
 *{
-   
-}
-nav{
-    background-color: #0060FF;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width:100%;
-}
-nav a{
     color:red;
-    
+    border : 0px solid red;
 }
+
 .container{
     text-align:center;
 }
@@ -62,8 +53,8 @@ margin-right: 50px;
 html{
     font-size:62.5%;
 }
-header{
-    background: #4046c4
+h1{
+    text-align: center;
 }
 body{
     font-size:1.6rem;
@@ -80,69 +71,96 @@ a:hover {
     font-weight: bold;	
 }	
 
-img {	
+.imaging {	
     height:39rem;	
     object-fit: cover;	
     display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
+    margin-bottom: 2%;
+    margin-top:2%;	
     margin-left: auto;	
     margin-right: auto;	
     border-radius: 2%;	
+    padding:14%;
+    background:no-repeat;
 }	
-img:hover {	
-    opacity: 80%;	
-}
-
 .opening{
 
-    padding: 11%;
+    padding: 14%;
     color:blue;
 }
 .opening h1{
     text-align:center;
 }
-.middle{
 
-box-sizing: border-box;
-max-width: 100%;
-letter-spacing: 1px;
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 100%;
-padding-right: 5%;
-}
-.middle h1{
- text-align: center;
-}
 .placeholderOne{
-    padding:11%;
+    padding:15%;
 }
 footer {
     width: 100%;
-    padding:11%;
-    background: black;
+    padding:8%;
+    background: #fabea7;
 }
 
 footer nav {
-    width: 0%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 2%;
     font-size: 14px;
 }
-
+.blue{width: 100%;
+    padding:8%;
+    background: #cff6cf;}
+.white{width: 100%;
+    padding:8%;
+    background: #f6def6;}
+    .ourTeam{ 
+        padding:8%;
+    background: #f6def6;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .container{
+max-width: 100%;
+color: #1B1A1A;
+width: 45%;
+margin-bottom: 5%;
+display: flex;
+flex-direction: column;
+    }
+    .container img{
+max-width: 100%;
+justify-content: center;
+align-items: center;
+color: #1B1A1A;
+width: 30%;
+    }
+    .team{
+max-width: 100%;
+color: #1B1A1A;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 2%;
+    }
 footer nav a {
-    color: white;
-    text-decoration: none;
+max-width: 100%;
+letter-spacing: 1px;
+border: 0;
+vertical-align: baseline;
+width: 2rem;
+text-decoration: none;
+border-radius: 5px;
+background: #3B5998;
+color: white;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+display: flex;
+justify-content: center;
+font-size: 1.5rem;
+text-align: center;
+margin: 0;
+padding: 0.75rem 1.5rem;
 }
 
 
