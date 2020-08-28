@@ -19,8 +19,10 @@ font: inherit;
 vertical-align: baseline;  
 } 
 *{
-    color:red;
-    border : 0px solid red;
+    color:black;
+}
+.glyphicon{
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .container{
@@ -32,13 +34,13 @@ vertical-align: baseline;
     color: red;
     padding: 15px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 2rem;
 }
 .top-info{
- background-color: #4046c4
+ background-color: #4046c4;
  box-sizing: border-box;
 max-width: 100%;
-font: inherit;
+font-family: 'Montserrat', sans-serif !important;
 vertical-align: baseline;
 display: flex;
 text-decoration: none;
@@ -52,14 +54,21 @@ margin-right: 50px;
 
 html{
     font-size:62.5%;
+    border: 50px dotted transparent;
+    border-image: url(cloudskills.jpg) 10% repeat;
 }
 h1{
+    text-align: center !important;
+}
+.blue .white h1{
     text-align: center;
+    background:lightblue;
 }
 body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
+    background:lightblue;
 }
 
 a {	
@@ -70,6 +79,10 @@ a {
 a:hover {	
     font-weight: bold;	
 }	
+ .center{
+     text-align: center;
+     list-style-position: inside;
+ }
 
 .imaging {	
     height:39rem;	
@@ -81,19 +94,23 @@ a:hover {
     margin-right: auto;	
     border-radius: 2%;	
     padding:14%;
+    font-size: 5rem;
     background:no-repeat;
+    font-weight: 900;
+    opacity: 0.8;
 }	
 .opening{
-
+    font-size: 5rem;
     padding: 14%;
-    color:blue;
-}
-.opening h1{
-    text-align:center;
+    font-weight: 900;
+    opacity: 0.8;
 }
 
 .placeholderOne{
     padding:15%;
+    font-size: 5rem;
+    font-weight: 900;
+    opacity: 0.8;
 }
 footer {
     width: 100%;
@@ -104,16 +121,31 @@ footer {
 footer nav {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
 }
+.fa-twitter{
+    background: #55ACEE;
+}
 .blue{width: 100%;
     padding:8%;
-    background: #cff6cf;}
+    background: #cff6cf;
+text-align:center;
+font-weight: 900;
+}
+.blue h1{
+    margin-bottom: 4%;
+}
 .white{width: 100%;
     padding:8%;
-    background: #f6def6;}
+    background: #f6def6;
+    text-align:center;
+    font-weight: 900;
+}
+.white h1{
+    margin-bottom: 4%;
+}
     .ourTeam{ 
         padding:8%;
     background: #f6def6;
@@ -129,11 +161,14 @@ display: flex;
 flex-direction: column;
     }
     .container img{
-max-width: 100%;
-justify-content: center;
-align-items: center;
-color: #1B1A1A;
-width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    div .ok{
+        height:42%;
     }
     .team{
 max-width: 100%;
@@ -144,23 +179,31 @@ justify-content: space-around;
 padding: 2%;
     }
 footer nav a {
-max-width: 100%;
-letter-spacing: 1px;
-border: 0;
-vertical-align: baseline;
-width: 2rem;
-text-decoration: none;
+margin:10px;
+text-align:center;
+width:36px;
+height:36px;
+background: blue;
+color:white;
+line-height:36px !important;
+font-size:24px !important;
 border-radius: 5px;
-background: #3B5998;
-color: white;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
-display: flex;
-justify-content: center;
-font-size: 1.5rem;
-text-align: center;
-margin: 0;
-padding: 0.75rem 1.5rem;
 }
 
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+    .container{
+        widows: 20%;
+        margin-right:100;
+    }
+    .ourTeam{
+        display: flex;
+        
+    }
+    .ok{
+        height:40%;
+    }
+  }
 
