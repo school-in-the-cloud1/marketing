@@ -59,7 +59,7 @@ font-weight: 900 !important;
 html{
     font-size:62.5%;
     border: 50px dotted transparent;
-    border-image: url(cloudskills.jpg) 10% repeat;
+    border-image: url(/images/cloudskills.jpg) 10% repeat;
 }
 h1{
     text-align: center !important;
